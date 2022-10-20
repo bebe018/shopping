@@ -1,0 +1,120 @@
+body{
+    background-color: lightgray;
+    font-family: Arial, Helvetica, sans-serif;
+    color:#fdfdfc
+}
+h1{
+    margin:0 auto;
+}
+.flex_center {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;       
+}
+.footer{
+    text-align: center;
+}
+.frame{
+    display: flex;
+    height:900px;
+}
+.list{
+    width: 12%;
+}
+.wrap{
+    width: 88%;
+    /* display: -ms-flexbox; IE10 */
+    display: flex;
+    /* -ms-flex-wrap: wrap; IE10 */
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;   
+}
+.info{
+    width: 800px;
+    margin:auto;
+    overflow: hidden;
+}
+.search_result{
+    color: #fdfdfc;
+}
+.product{
+    width:380px;
+    height: 180px;
+    margin:10px;
+    font-size: 14px;
+}
+.product:nth-child(3n+1){
+    padding: 10px;
+    width:280px;
+    height:280px;
+    float:left;
+    text-align: center;
+    vertical-align: middle;
+}
+.product:nth-child(3n+2),.product:nth-child(3n+3){
+    padding:5px ;
+    float: right;
+    text-align: center;
+}
+a:link{
+    text-decoration: none;
+}
+a:visited{
+    color: white;
+    text-decoration: none;
+}
+/* hover一定要在link跟visited後面 */
+a:hover{
+    color:#ffcc00
+}
+/* active一定要在hover後面 */
+
+img.product{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+.collapsible {
+    background-color: darkolivegreen;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    text-align: center;
+  }
+  
+  .active, .collapsible:hover {
+    background-color: #555;
+  }
+  
+  .collapsible:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2212";
+  }
+  
+  .content {
+    text-align: center;
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: darkgray;
+  }

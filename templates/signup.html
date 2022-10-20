@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/layout.css')}}">
+    <title>Document</title>
+</head>
+<body>
+    <a href="/" title="Go back to shopping">
+        <img src="/static/homepage.jpg" alt="Go back to shopping" width="128px" height="84px">
+    </a>
+    <div class="footer">
+        <form action="/signup" method="POST">
+            <h1>Create account</h1><br/>
+            <label for="username">Username:</label>
+            <input required type="text" name="username" id="username" value="{{ username }}" placeholder="username(6~16 letters)" minlength="6" maxlength="16"  autocapitalize="off"><br/><br/>
+
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" placeholder="password(8~16 lteeters)" minlength="8" maxlength="16" required><br/><br/>
+            <label for="Check_Password">Check_Password:</label>
+            <input type="password" name="Check_Password" id="Check_Password" placeholder="Pleae type password again" minlength="8" maxlength="16" required><br/><br/>
+
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" id="email" placeholder="email" value="{{ email }}" required><br/><br/>
+
+            <input type="submit" value="Create account" /> <br/><br/>
+            {{ error }}
+        </form>
+    </div>
+   
+</body>
+</html>

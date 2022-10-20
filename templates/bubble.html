@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online-Store</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/layout.css')}}">
+</head>
+<body>
+
+        <a href="/" title="Back to shopping pages">
+            <img src="/static/homepage.jpg" alt="Back to shopping pages" width="100px" height="100px" style="float:left;"></a>
+
+        <a href="/login" title="Login">
+            <img src="/static/login.jpg" alt="Login" width="100px" height="100px" style="float:right"></a>
+
+        <div style="margin: 0 auto; width: 100px;">
+        <a href="/cart" title="Go to cart">
+            <img src="/static/cart.jpg" alt="Go to cart" width="100px" height="100px"></a>
+        </div>
+
+    <div class="frame">
+
+        <div class="list">
+            <form action="/search_results">
+                <input type="text" name="search" placeholder="Type keyword here" size="15">
+                <input type="submit" value="Search">
+            </form><br/>
+            <button type="button" class="collapsible" >熟食</button>
+                <div class="content">    
+                    <br/>            
+                    <a href="/products/chickenwings" >水牛城辣雞翅</a><br/><br/>
+                    <a href="/products/braise" >滷味拼盤</a><br/><br/>
+                    <a href="/products/pasta" >義大利麵</a><br/><br/>
+                </div>
+
+            <button type="button" class="collapsible" >生鮮區</button>
+                <div class="content">    
+                    <br/>            
+                    <a href="/products/vegetable" >季節時蔬</a><br/><br/>
+                    <a href="/products/fruit" >水果</a><br/><br/>
+                    <a href="/products/meat" >牛羊豬雞</a><br/><br/>
+                    <a href="/products/egg" >雞蛋</a><br/><br/>
+                </div>
+
+            <button type="button" class="collapsible" >飲品區</button>
+                <div class="content">    
+                    <br/>            
+                    <a href="/products/bubble" >氣泡飲料</a><br/><br/>
+                    <a href="/products/milk" >牛奶</a><br/><br/>
+                    <a href="/products/alchohol" >酒精飲料</a><br/><br/>
+                </div>
+
+            <button type="button" class="collapsible" >烘焙</button>
+                <div class="content">    
+                    <br/>            
+                    <a href="/products/bread" >麵包</a><br/><br/>
+                    
+                </div>
+
+        </div>
+        
+        <div class="info">
+            <div class="product"><img src="/static/bubble.jpg" width="200" height="200"></div>
+            <div class="product">
+                <p>沁涼氣泡，夏天消暑首選</p>
+            </div>
+            <div class="product">
+                <form action="/products/bubble" method="POST">
+                    <select name="quantity">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                    <input type="submit" value="Add to cart"/>
+                </form>
+            </div>   
+        </div>
+    </div>
+</body>
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight){
+              content.style.maxHeight = null;
+            } else {
+              content.style.maxHeight = content.scrollHeight + "px";
+            } 
+          });
+        }
+    </script>
+        <hr/>
+</body>
+</html> 

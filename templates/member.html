@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/layout.css')}}">
+    <title>Document</title>
+</head>
+<body>
+    <a href="/" title="Go back to shopping">
+        <img src="/static/homepage.jpg" alt="Go back to shopping" width="128px" height="84px">
+    </a>
+
+    <div class="flex_center">
+        <form action="/logout">
+            <h1>Member</h1><br/>
+            <label>Username:{{username}}</label>&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="submit" value="Logout" /> <br/><br/>
+        </form>
+        <form action="/member" method="POST">
+            <label for="password">Old Password:</label>
+            <input required type="password" name="password" id="password" placeholder="password"  autocapitalize="off"><br/><br/>
+            <label for="new_password">New Password:</label>
+            <input required type="password" name="new_password" id="new_password" placeholder="new password" required><br/><br/>
+            <label for="check_new_password">Check New Password:</label>
+            <input required type="password" name="check_new_password" id="check_new_password" placeholder="check new password" required><br/><br/>            
+            <input type="submit" value="Modify Password" /> <br/><br/>
+            {{ error }}
+        </form>
+    </div>
+   
+</body>
+</html>

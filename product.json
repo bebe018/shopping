@@ -1,0 +1,68 @@
+[
+  {
+    "_id": 1,
+    "category": "chickenwings",
+    "product_name":"chickenwings",
+    "price":"350"
+  },
+  {
+    "_id": 2,
+    "category": "braise",
+    "product_name":"braise",
+    "price":"150"
+  },
+  {
+    "_id": 3,
+    "category": "pasta",
+    "product_name":"pasta",
+    "price":"180"
+  },
+  {
+    "_id": 4,
+    "category": "vegetable",
+    "product_name":"vegetable",
+    "price":"80"
+  },
+  {
+    "_id": 5,
+    "category": "fruit",
+    "product_name":"fruit",
+    "price":"120"
+  },
+  {
+    "_id": 6,
+    "category": "meat",
+    "product_name":"meat",
+    "price":"450"
+  },
+  {
+    "_id": 7,
+    "category": "egg",
+    "product_name":"egg",
+    "price":"100"
+  },
+  {
+    "_id": 8,
+    "category": "bubble",
+    "product_name":"bubble",
+    "price":"50"
+  },
+  {
+    "_id": 9,
+    "category": "milk",
+    "product_name":"milk",
+    "price":"165"
+  },
+  {
+    "_id": 10,
+    "category": "alchohol",
+    "product_name":"alchohol",
+    "price":"800"
+  },
+  {
+    "_id": 11,
+    "category": "bread",
+    "product_name":"bread",
+    "price":"60"
+  }
+]
