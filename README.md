@@ -36,8 +36,17 @@ MongoDB
     >>> import secrets
     >>> secrets.token_urlsafe(16)
         for example the key will like 'n2LzE3WSktAQua3EqwAX6A'
+6. Here is the basic shopping website function.
+    Login
+    ![image](https://github.com/bebe018/shopping/blob/master/Login.png)
+    Cart
+    ![image](https://github.com/bebe018/shopping/blob/master/Cart.png)
+    Forgot Password
+    ![image](https://github.com/bebe018/shopping/blob/master/Forgot%20Password.png)
+    Modify Password
+    ![image](https://github.com/bebe018/shopping/blob/master/Modify%20Password.png)
     
-
+  
 # Test It Locally
 Now, you can test it locally by the following commands:
 1. `cd shopping`
