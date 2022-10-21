@@ -5,7 +5,7 @@ This is a simple shopping demo. Basically, there are two features in this projec
 
 # Structure
 ## Front End
-HTML, CSS
+HTML, CSS, JavaScript
 ## Programming Language
 Python
 ## Web Application Framework
