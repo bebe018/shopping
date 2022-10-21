@@ -29,5 +29,5 @@ def send(email, url):
     
     # Send the message via SMTP server.
     with smtplib.SMTP_SSL("smtp.gmail.com", 465) as server:
-        server.login("d4613d@gmail.com","mfbgdevuuizppcgu")
+        server.login("","")
         server.send_message(message)

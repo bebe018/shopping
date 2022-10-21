@@ -20,7 +20,7 @@ shopping=Flask(
     
 )
 
-shopping.secret_key="key"
+shopping.secret_key=""
 
 bcrypt=Bcrypt(shopping)
 
