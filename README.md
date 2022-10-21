@@ -36,7 +36,7 @@ MongoDB
     >>> import secrets
     >>> secrets.token_urlsafe(16)
         for example the key will like 'n2LzE3WSktAQua3EqwAX6A'
-6. Here is the basic shopping website function.
+6. Here is the basic shopping website function.<br />
     Login
     ![image](https://github.com/bebe018/shopping/blob/master/Login.png)
     Cart
